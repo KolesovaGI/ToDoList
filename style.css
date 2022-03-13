@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    min-width: 250px;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-color: #968bb6;
+    text-align: center;
+    color: white;
+    padding: 30px 40px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 22px;
+    font-family: "Constantia";
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.addObj {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.content {
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #968bb6;
+    color: white;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.addButton {
+    padding: 10px;
+    width: 25%;
+    background: #a796c9;
+    color: #fafafa;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addButton:hover {
+    background-color: #968bb6;
+}
+
+.filter {
+    text-align: center;
+    margin: 50px 0 0 0;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #888;
+    font-weight: bold;
+}
+
+.filterBtn {
+    margin: 0 0 0 50px;
+}
+
+.filterBtn:hover {
+    color: #cdb0ee;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}

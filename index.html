@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Колесова, Балева, Березина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="script.js"></script>
+<div class="header">
+    <h2 class="logo">СПИСОК ДЕЛИШЕК</h2>
+    <div class="addObj">
+        <input id="input" type="text" placeholder="Введите новое дело...">
+        <span class="addButton" onclick="addToList()">СОХРАНИТЬ</span>
+    </div>
+</div>
+<div class="content">
+    <ul id="list">
+        <li>Поплакать</li>
+    </ul>
+</div>
+<div class="filter">
+    <span id="fullSpan" class="filterBtn" onclick="showAll()">Все</span>
+    <span id="checkedSpan" class="filterBtn" onclick="showChecked()">Выполненные</span>
+    <span id="unfinishedSpan" class="filterBtn" onclick="showUnfinished()">В процессе</span>
+</div>
+</body>
+</html>
