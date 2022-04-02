@@ -13,7 +13,7 @@
 <div class="header">
     <h2 class="logo">СПИСОК ДЕЛИШЕК</h2>
     <div class="addObj">
-        <input id="input" type="text" placeholder="Введите новое дело...">
+        <input id="input" type="text" placeholder="Введите новое дело..." onkeypress="handleKeyPress(event)">
         <span class="addButton" onclick="addToList()">СОХРАНИТЬ</span>
     </div>
 </div>
@@ -23,9 +23,9 @@
     </ul>
 </div>
 <div class="filter">
-    <span id="fullSpan" class="filterBtn" onclick="showAll()">Все</span>
-    <span id="checkedSpan" class="filterBtn" onclick="showChecked()">Выполненные</span>
-    <span id="unfinishedSpan" class="filterBtn" onclick="showUnfinished()">В процессе</span>
+    <span id="fullSpan" class="filterBtn" onclick="showAll()">Все: <span id="allCount">0</span></span>
+    <span id="checkedSpan" class="filterBtn" onclick="showChecked()">Выполненные: <span id="doneCount">0</span></span>
+    <span id="unfinishedSpan" class="filterBtn" onclick="showUnfinished()">В процессе: <span id="notDoneCount">0</span></span>
 </div>
 </body>
 </html>

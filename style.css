@@ -3,6 +3,7 @@ body {
     min-width: 250px;
     background-color: #fafafa;
     font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
 }
 
 .header {
@@ -36,7 +37,7 @@ body {
 
 .content {
     width: 80%;
-    height: 800px;
+    max-height: 670px;
     margin: 0 auto;
     overflow-x: hidden;
     overflow-y: scroll;
